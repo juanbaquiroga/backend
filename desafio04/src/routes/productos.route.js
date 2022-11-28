@@ -14,7 +14,7 @@ let products =[{
     thumbnail:"producto 2.jpg",
     id: 2
 }]
-const nextId = 1
+
 router
     .route('/')
     .get((req, res)=>{

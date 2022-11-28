@@ -1,0 +1,10 @@
+extend main.pug 
+
+block form 
+    h1 formulario de carga
+    a(href='http://localhost:3000/products') ver productos
+    form(action="/products" method="post")
+        input(type="text" name="title" placeholder="Nombre de producto" required)
+        input(type="number" id="price" name="price" placeholder="Precio" required)
+        input(type="text" name="img" placeholder="Url de la imagen" required)
+        input(type="submit")

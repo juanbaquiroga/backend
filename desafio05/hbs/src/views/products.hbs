@@ -1,0 +1,22 @@
+<div class="main">
+    <h1>Tienda de productos</h1>
+    <a href="http://localhost:3000">ir formulario de carga</a>
+        {{#if hasAny}}
+        <table class="table">
+            <tr class="tableRow">
+                <th class="tableTitle">Nombre</th>
+                <th class="tableTitle">Precio</th>
+                <th class="tableTitle">Foto</th>
+            </tr>
+            {{#each products}}
+                <tr class="tableRow">
+                <td class="productTitle">{{this.title}}</td>
+                <td class="productPrice">${{this.price}}</td>
+                <td class="containerImg"><img class="productImg" src={{this.img}} alt={{this.title}} width="100"></td>
+                </tr>
+            {{/each}}
+        </table>
+        {{else}}
+            <h1>no hay productos</h1>
+        {{/if}}
+</div>

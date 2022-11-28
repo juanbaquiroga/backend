@@ -1,0 +1,14 @@
+extend main.pug 
+
+block products
+    h1 productos
+    a(href='http://localhost:3000/') ir al formulario de carga 
+    if hasAny
+        for product in products
+            div(style='gap:10px')
+                div(style='display:flex; flex-floe:row nowrap; align-items:center')
+                    h2(style='margin:10px')=product.title 
+                    p(style='margin:10px')=`$ ${product.price}`
+                    img(src=product.img width="100" style='margin:20px')
+    else 
+        h1 no hay productos

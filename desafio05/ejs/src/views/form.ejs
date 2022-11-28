@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            background-color: rgb(206, 206, 206);
+            width: 100%;
+            height: 100vh;
+            margin: 15px;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+        }
+        .form{
+            display: flex;
+            flex-flow: column nowrap;
+            width: 300px;
+            gap: 5px;
+            margin: 20px;
+        }
+        .input{
+            border: none;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Carga tu producto</h1>
+        <a href="http://localhost:3000/products">ir a productos</a>
+        <form action="/products" method="post" class="form">
+            <input class="input" type="text" name="title" placeholder="Nombre de producto" required>
+            <input class="input" type="number" id="price" name="price" placeholder="Precio" required>
+            <input class="input" type="text" name="thumbnail" placeholder="Url de la imagen" required>
+            <input class="input" type="submit">
+        </form>
+    </div>
+</body>
+</html>
