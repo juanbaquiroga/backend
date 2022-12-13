@@ -1,0 +1,42 @@
+[
+  {
+    "title": "iphone 12",
+    "price": "600",
+    "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-finish-unselect-gallery-2-202207?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1662129021500",
+    "description": "esta es la descripcion del iphone 12",
+    "code": "al123LK3132m",
+    "stock": "13",
+    "id": 1,
+    "timestamp": "11/12/2022 15:30:10"
+  },
+  {
+    "title": "iphone 13",
+    "price": "700",
+    "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-storage-select-202207-6-1inch-blue?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1655405993391",
+    "description": "esta es la descripcion del iphone 13",
+    "code": "q1e97f31800",
+    "stock": "20",
+    "id": 2,
+    "timestamp": "11/12/2022 15:30:10"
+  },
+  {
+    "title": "iphone 14",
+    "price": "800",
+    "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-model-unselect-gallery-2-202209_GEO_US?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1660744858995",
+    "description": "esta es la descripcion del iphone 14",
+    "code": "cO84VBPF43987",
+    "stock": "2",
+    "id": 3,
+    "timestamp": "11/12/2022 15:30:10"
+  },
+  {
+    "title": "iphone 14 pro max",
+    "price": "1150",
+    "img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-7inch-deeppurple?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1663703841896",
+    "description": "esta es la descripcion del iphone 14 pro max.",
+    "code": "rvc08q73h",
+    "timestamp": "11/12/2022 15:48:43",
+    "stock": "101",
+    "id": 4
+  }
+]
