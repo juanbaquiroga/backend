@@ -1,0 +1,76 @@
+## ejecuto mongo 
+
+    -- sudo mongod --dbpath=./database   (en mac)
+
+## accedo a mongo desde otra terminal, creo la base y las colecciones
+
+    -- mongosh
+
+    -- use ecommerce
+    
+    -- db.createCollection("productos")
+    -- db.createCollection("mensajes")
+
+## agrego 10 elementos a las colecciones, los muestro y los cuento
+
+    -- db.productos.insertMany([
+        { title:'galletitas', price: 122 },
+        { title:'salchichas', price: 580 },
+        { title:'gaseosa', price: 900 },
+        { title:'cerveza', price: 1280 },
+        { title:'vino', price: 1700 },
+        { title:'asado', price: 2300 },
+        { title:'olla', price: 2860 },
+        { title:'sidra', price:3350 },
+        { title:'chocolates', price: 4320 },
+        { title:'bizcochos', price: 4990 }])
+
+    -- db.mensajes.insertMany([
+        {usuario: 'juan cruz', mensaje:'hola como estas'},
+        {usuario: 'pedro', mensaje:'que hora es?'},
+        {usuario: 'jeremias', mensaje:'cuanto falta para navidad?'},
+        {usuario: 'javier', mensaje:'que pintaaa'},
+        {usuario: 'federico', mensaje:'hola gente'},
+        {usuario: 'hernan', mensaje:'hace mucho calor'},
+        {usuario: 'bautista', mensaje:'que lindo dia'},
+        {usuario: 'pablo', mensaje:'estoy cansado'},
+        {usuario: 'norma', mensaje:'cuantos mensajes quedan?'},
+        {usuario: 'juan', mensaje:'ya no se que mas inventar'}])
+
+
+    -- db.productos.find()
+
+    -- db.mensajes.find()
+
+
+    -- db.productos.estimatedDocumentCount()
+
+    -- db.mensajes.estimatedDocumentCount()
+
+
+##CRUD en la coleccion de productos
+
+    a) db.productos.insertOne({title:'celular', price: 3500 })
+
+    b)
+        i) db.productos.find({price:{$lt: 1000}})
+        ii) db.productos.find({ $and: [{ price: {$lt: 3000}}, { price: {$gt: 1000}}] })
+        iii) db.productos.find({price:{$gt: 3000}})
+        iv) db.productos.find().sort({price: 1}).skip(2).limit(1)
+    
+    c) db.productos.updateMany({}, {$set :{stock: 100}})
+
+    d) db.productos.updateMany({price:{$gt: 4000}},{$set:{stock:120}})
+
+    e) db.productos.deleteMany({price:{$lt: 1000}})
+
+## crear un usuario 'pepe' que solo puede leer
+
+    -- use admin
+    -- db.createUser({user:'pepe', pwd:'asd456', roles:[{role:'read', db:'ecommerce'}]})
+
+    //en la terminal del servidor detengo la ejecucion 
+    //la retomo agregando: sudo mongod --auth --dbpath=./database
+
+    //vuelvo a ejecutar mongosh
+    --  mongosh -u pepe -p asd456   
