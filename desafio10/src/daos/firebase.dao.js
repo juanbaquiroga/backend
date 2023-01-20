@@ -51,8 +51,8 @@ export class FirebaseDao {
 
     async delete(idDelete) {
         try {
-            const cartsRef = doc(this.db, this.collection, idDelete);
-            await deleteDoc(cartsRef);
+            const docRef = doc(this.db, this.collection, idDelete);
+            await deleteDoc(docRef);
             console.log(`delete doc!, ID: ${idDelete}`);
         } catch (err) {
             console.log(err);

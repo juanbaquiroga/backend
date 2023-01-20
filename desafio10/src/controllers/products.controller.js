@@ -42,7 +42,8 @@ const updateProduct = async (req, res) => {
         const { id } = req.params;
         const { title, price, stock, code, img, description } = req.body;
         await Products.update(id, { title, price, code, stock, img, description});
-        return Products.getById(id);
+        const response = await Products.getById(id);
+        res.json(response);
     } catch (err) {
         throw new Error();
     }
@@ -51,8 +52,9 @@ const updateProduct = async (req, res) => {
 const deleteProduct = async (req, res) => {
     try {
         const { id } = req.params;
-        await Products.delete(id);
-        return "delete realizado";
+        Products.delete(id);
+        const response = await Products.getAll();
+        res.json(response);
     } catch (err) {
         throw new Error();
     }

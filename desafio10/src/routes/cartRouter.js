@@ -1,8 +1,8 @@
 import { Router } from "express";
-import { cartController } from "../../../20-preentrega-2/controllers/cart.controller.js";
+import { CartController } from "../controllers/cart.controller.js";
 
 const router = Router()
 
-router.route('/').get().post(cartController.createCart)
+router.route('/').get().post(CartController.createCart)
 
 export default router
