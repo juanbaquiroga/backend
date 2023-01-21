@@ -22,21 +22,29 @@ export class MongoDao {
         throw new Error("Error getting resources");
       }
     }
+
+    async addProdToCart(id, cart){
+        try {
+            const response = await this.model.findByIdAndUpdate(id, cart);
+            return response;
+          } catch (err) {
+            throw new Error("Error getting resources");
+          }
+    }
   
     async create(resource) {
       try {
-        const response = await this.model.create(resource);
-  
+        const response = await this.model.create(resource)
         return response;
       } catch (err) {
         throw new Error("Error getting resources");
       }
     }
   
-    async update(resource, id) {
+    async update(id, resource) {
       try {
         const response = await this.model.findByIdAndUpdate(id, resource);
-  
+   
         return response;
       } catch (err) {
         throw new Error("Error getting resources");

@@ -4,4 +4,5 @@ export class CartFirebaseDao extends FirebaseDao {
     constructor() {
         super("cart");
     }
+    
 }

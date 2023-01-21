@@ -3,6 +3,7 @@ import { CartController } from "../controllers/cart.controller.js";
 
 const router = Router()
 
-router.route('/').get().post(CartController.createCart)
+router.route('/').get(CartController.getAllCarts).post(CartController.createCart)
+router.route('/:id').post(CartController.addToCart).delete(CartController.deleteCart).get(CartController.getById)
 
-export default router
+export default router   

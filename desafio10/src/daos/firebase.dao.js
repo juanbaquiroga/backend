@@ -17,14 +17,14 @@ export class FirebaseDao {
         } catch (err) {
             console.log(err);
         }
-    }
+    } 
 
     async getAll() {
         const objs = [];
 
         try {
             const snapshot = await getDocs(collection(this.db, this.collection));
-            snapshot.forEach((doc) => {objs.push(doc.data())});
+            snapshot.forEach((doc) => {objs.push([doc.id, doc.data()])});
             return objs;
         }
         catch (err) {console.log(err)}
@@ -49,6 +49,15 @@ export class FirebaseDao {
         }
     }
 
+    async addProdToCart (id, cart){
+        try{
+            const docRef = doc(this.db, this.collection, id)
+            await updateDoc(docRef, cart);
+            return `Product added successfully to cart ${id}`
+        }
+        catch (err) {console.log(err)}
+    };
+
     async delete(idDelete) {
         try {
             const docRef = doc(this.db, this.collection, idDelete);
@@ -56,6 +65,8 @@ export class FirebaseDao {
             console.log(`delete doc!, ID: ${idDelete}`);
         } catch (err) {
             console.log(err);
-        }
+        }  
     }
+
+    
 }

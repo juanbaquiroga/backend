@@ -5,7 +5,6 @@ import moment from 'moment'
 const Products = new Daos.ProductsDao(ProductsModel);
 
 const getAllProducts = async (req, res) => {
-    console.log(Products)
   try {
     const response = await Products.getAll();
 
@@ -13,10 +12,9 @@ const getAllProducts = async (req, res) => {
   } catch (err) {
     throw new Error();
   }
-};
+}; 
 
 const getById = async (req, res) => {
-    console.log(Products)
   try {
     const {id} = req.params
     const response = await Products.getById(id);
@@ -29,10 +27,11 @@ const getById = async (req, res) => {
 const createProduct = async (req, res) => {
     try {
         const { title,price, stock, code, img, description} = req.body;
-        await Products.create({ title, price, code, stock, img, description, timestamp:moment().format('DD/MM/YYYY HH:mm:ss')});
+        
+        await Products.create({ title, price: Number(price), code, stock:Number(stock), img, description, timestamp:moment().format('DD/MM/YYYY HH:mm:ss')});
         const response = await Products.getAll();
         res.json(response);
-    } catch (err) {
+    } catch (err) { 
         throw new Error();
     }
 };
@@ -46,9 +45,9 @@ const updateProduct = async (req, res) => {
         res.json(response);
     } catch (err) {
         throw new Error();
-    }
+    } 
 };
-
+  
 const deleteProduct = async (req, res) => {
     try {
         const { id } = req.params;
