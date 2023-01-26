@@ -1,0 +1,9 @@
+<div style="display: flex; flex-flow:row wrap; max-width: 600px; margin:50px auto; gap:20px">
+    {{#each items}}
+    <div style="background-color: #EEEEEE; padding: 10px; border-radius:15px; width:200px; height:250px">
+        <h2 style="font-size: 20px;">{{this.title}}</h2>
+        <p >${{this.price}}</p>
+        <img src="{{this.img}}" alt="" width="200">
+    </div>
+    {{/each}}
+</div>
