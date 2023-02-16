@@ -5,7 +5,8 @@
   "main": "src/server.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon ."
+    "start": "nodemon .",
+    "on": "nodemon src/server.js -p 3000"
   },
   "keywords": [],
   "author": "",

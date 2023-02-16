@@ -15,6 +15,7 @@ import mongoose from 'mongoose'
 import { User } from './tables/user.model.js'
 import args from './yargs/yargs.js'
 import env from './config/config.js'
+import apiRouter from './routes/api.route.js'
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -50,6 +51,7 @@ passport.deserializeUser(async (id, done) => {
 
     
 app.use('/', router)
+app.use('/api', apiRouter)
 
 
 
