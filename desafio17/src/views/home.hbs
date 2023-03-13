@@ -1,0 +1,17 @@
+<header  style="display: flex; flex-flow:row nowrap; justify-content:space-between; padding: 10px 20px;background-color:rgba(0, 0, 0, 0.30)">
+    <h2>{{email}}</h2>
+    <a class="btn btn-danger my-2" href="/logout">logout</a>
+</header>
+<div style="display: flex; flex-flow:column nowrap; align-items:center;">
+    <h1 style="text-align: center;">formulario de productos</h1>
+    <div style="display: flex; justify-content:center; background-color:rgba(97, 97, 97, 0.107); width:60%; border-radius:10px; margin:20px; padding:15px">
+        <form id="productsForm" style="display: flex; flex-flow:column; gap:5px; width:250px;">
+            <input type="text"  id="productTitleInput" placeholder="ingrese el nombre del producto">
+            <input type="number"  id="productPriceInput" placeholder="ingrese el precio del producto">
+            <input type="text"  id="productImageInput" placeholder="ingrese la URL de la imagen de su producto">
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    {{>table}}
+    {{>chat}}
+</div>
