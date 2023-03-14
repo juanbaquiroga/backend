@@ -11,14 +11,15 @@ const app = express();
 app.use(json());
 app.use(urlencoded({extended:true}))
 
+const PORT = process.env.PORT || 8080
 
 
     
 app.use('/', router)
 
 
-app.listen(args.port, ()=>{
-console.log(`server listening port ${args.port}`)})
+app.listen(PORT, ()=>{
+console.log(`server listening port ${PORT}`)})
 
 
 
