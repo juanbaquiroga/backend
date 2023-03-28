@@ -1,0 +1,30 @@
+[2023-03-27T23:30:28.210] [ERROR] default - RestException [Error]: Authenticate
+    at success (/Users/juanbaquiroga/Desktop/backend/desafios/desafio19/node_modules/twilio/lib/base/Version.js:79:23)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async cartPost (file:///Users/juanbaquiroga/Desktop/backend/desafios/desafio19/src/controllers/ecommerce.controller.js:94:25) {
+  status: 401,
+  code: 20003,
+  moreInfo: 'https://www.twilio.com/docs/errors/20003',
+  details: undefined
+}
+[2023-03-27T23:39:36.419] [ERROR] default - error al añadir al carrito
+[2023-03-27T23:39:57.175] [ERROR] default - error al añadir al carrito
+[2023-03-27T23:51:12.305] [ERROR] default - error al vaciar carrito
+[2023-03-27T23:51:17.502] [ERROR] default - RestException [Error]: Authenticate
+    at success (/Users/juanbaquiroga/Desktop/backend/desafios/desafio19/node_modules/twilio/lib/base/Version.js:79:23)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async cartPost (file:///Users/juanbaquiroga/Desktop/backend/desafios/desafio19/src/controllers/ecommerce.controller.js:91:9) {
+  status: 401,
+  code: 20003,
+  moreInfo: 'https://www.twilio.com/docs/errors/20003',
+  details: undefined
+}
+[2023-03-27T23:56:13.522] [ERROR] default - RestException [Error]: Authenticate
+    at success (/Users/juanbaquiroga/Desktop/backend/desafios/desafio19/node_modules/twilio/lib/base/Version.js:79:23)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async cartPost (file:///Users/juanbaquiroga/Desktop/backend/desafios/desafio19/src/controllers/ecommerce.controller.js:91:9) {
+  status: 401,
+  code: 20003,
+  moreInfo: 'https://www.twilio.com/docs/errors/20003',
+  details: undefined
+}

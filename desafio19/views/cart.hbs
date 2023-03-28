@@ -1,0 +1,31 @@
+<header  style="display: flex; flex-flow:row nowrap; justify-content:space-between; padding: 10px 20px;background-color:rgba(0, 0, 0, 0.30); align-items:center">
+<h3>{{username}}</h3>
+<div>
+<a href="/logout" style="background-color:rgb(43, 43, 43); color:rgb(255, 255, 255); border-radius: 20px; padding:5px 15px" class="btn mr-3">Logout</a>
+<a href="/" style="background-color:rgb(76, 76, 76); color:rgb(255, 255, 255); border-radius: 20px; padding:5px 15px" class="btn mr-3">Home</a>
+<img style="width: 50px; height:50px; border-radius: 50%; object-fit:cover" src="{{userImg}}" alt="">
+</div>
+</header>
+<div style="display: flex; flex-flow:column nowrap; align-items:center;">
+    {{#if hasAny}}
+        <div style="background-color:rgba(97, 97, 97, 0.107); width:70%; border-radius:10px; margin:20px; padding:15px">
+            <h1 style="text-align: center;">your cart</h1>
+            <div style="display: flex; justify-content:center">
+                <div style="display:flex; flex-flow:row wrap; gap:10px">
+                    {{#each products}}
+                        <div style="display:flex; flex-flow:column; background-color: rgb(255, 255, 255); padding:12px; border-radius: 15px; align-items:center; gap:5px; justify-content:space-between">
+                            <img style="width: 200px; border-radius:7px;" src={{this.img}} alt={{this.title}}>
+                            <h3>{{this.name}}</h3>
+                            <b>price: ${{this.price}}</b>
+                        </div>
+                    {{/each}}
+                </div>
+            </div>
+    {{/if}}
+            <div style="display: flex; flex-flow:row nowrap; justify-content:center; width:100%; margin-top:50px">
+                <form action="/cart" method="post">
+                    <input href="/" type="submit" value="realizar pedido" style="background-color:rgb(76, 76, 76); color:rgb(255, 255, 255); border-radius: 20px; padding:5px 15px" class="btn mr-3"></input>
+                </form>
+            </div>
+        </div>
+</div>
