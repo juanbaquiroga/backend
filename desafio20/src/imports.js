@@ -8,8 +8,33 @@ import passport from 'passport';
 import session from 'express-session';
 import { passportStrategies } from "./lib/passport.lib.js";
 import mongoose from 'mongoose';
-import { User } from './models/model.js';
+import { User } from './models/index.js';
 import os from 'os';
 import cluster from 'cluster';
-import yargs from 'yargs';
 import logger from './lib/logger.lib.js';
+import config from './config/config.js';
+import cors from 'cors';
+import DBClientFactory from './classes/DBClientFactory.class.js';
+
+export {
+    express,
+    json,
+    urlencoded,
+    dirname,
+    join,
+    fileURLToPath,
+    engine,
+    router,
+    middlewares,
+    passport,
+    session,
+    passportStrategies,
+    mongoose,
+    User,
+    os,
+    cluster,
+    logger,
+    config,
+    cors,
+    DBClientFactory
+}

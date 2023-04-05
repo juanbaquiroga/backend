@@ -1,0 +1,212 @@
+[2023-04-03T12:59:32.526] [ERROR] default - Error: Invalid login: 535 Authentication failed
+    at SMTPConnection._formatError (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:790:19)
+    at SMTPConnection._actionAUTHComplete (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:1548:34)
+    at SMTPConnection.<anonymous> (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:546:26)
+    at SMTPConnection._processResponse (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:953:20)
+    at SMTPConnection._onData (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:755:14)
+    at TLSSocket.SMTPConnection._onSocketData (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:193:44)
+    at TLSSocket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at TLSSocket.Readable.push (node:internal/streams/readable:228:10) {
+  code: 'EAUTH',
+  response: '535 Authentication failed',
+  responseCode: 535,
+  command: 'AUTH PLAIN'
+}
+[2023-04-03T12:59:33.399] [ERROR] default - RestException [Error]: Authenticate
+    at success (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/twilio/lib/base/Version.js:79:23)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Strategy._verify (file:///Users/juanbaquiroga/Desktop/backend/desafios/desafio20/src/lib/passport.lib.js:90:17) {
+  status: 401,
+  code: 20003,
+  moreInfo: 'https://www.twilio.com/docs/errors/20003',
+  details: undefined
+}
+[2023-04-03T15:56:37.143] [ERROR] default - error al logear usuario
+[2023-04-03T23:19:38.695] [ERROR] default - Error: Invalid login: 535 Authentication failed
+    at SMTPConnection._formatError (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:790:19)
+    at SMTPConnection._actionAUTHComplete (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:1548:34)
+    at SMTPConnection.<anonymous> (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:546:26)
+    at SMTPConnection._processResponse (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:953:20)
+    at SMTPConnection._onData (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:755:14)
+    at TLSSocket.SMTPConnection._onSocketData (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:193:44)
+    at TLSSocket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at TLSSocket.Readable.push (node:internal/streams/readable:228:10) {
+  code: 'EAUTH',
+  response: '535 Authentication failed',
+  responseCode: 535,
+  command: 'AUTH PLAIN'
+}
+[2023-04-03T23:19:39.663] [ERROR] default - RestException [Error]: Authenticate
+    at success (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/twilio/lib/base/Version.js:79:23)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Strategy._verify (file:///Users/juanbaquiroga/Desktop/backend/desafios/desafio20/src/lib/passport.lib.js:90:17) {
+  status: 401,
+  code: 20003,
+  moreInfo: 'https://www.twilio.com/docs/errors/20003',
+  details: undefined
+}
+[2023-04-03T23:42:29.937] [ERROR] default - Error: Invalid login: 535 Authentication failed
+    at SMTPConnection._formatError (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:790:19)
+    at SMTPConnection._actionAUTHComplete (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:1548:34)
+    at SMTPConnection.<anonymous> (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:546:26)
+    at SMTPConnection._processResponse (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:953:20)
+    at SMTPConnection._onData (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:755:14)
+    at TLSSocket.SMTPConnection._onSocketData (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:193:44)
+    at TLSSocket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at TLSSocket.Readable.push (node:internal/streams/readable:228:10) {
+  code: 'EAUTH',
+  response: '535 Authentication failed',
+  responseCode: 535,
+  command: 'AUTH PLAIN'
+}
+[2023-04-03T23:44:25.779] [ERROR] default - Error: Invalid login: 535 Authentication failed
+    at SMTPConnection._formatError (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:790:19)
+    at SMTPConnection._actionAUTHComplete (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:1548:34)
+    at SMTPConnection.<anonymous> (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:546:26)
+    at SMTPConnection._processResponse (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:953:20)
+    at SMTPConnection._onData (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:755:14)
+    at TLSSocket.SMTPConnection._onSocketData (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:193:44)
+    at TLSSocket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at TLSSocket.Readable.push (node:internal/streams/readable:228:10) {
+  code: 'EAUTH',
+  response: '535 Authentication failed',
+  responseCode: 535,
+  command: 'AUTH PLAIN'
+}
+[2023-04-04T06:47:32.906] [ERROR] default - Error: Invalid login: 535 Authentication failed
+    at SMTPConnection._formatError (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:790:19)
+    at SMTPConnection._actionAUTHComplete (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:1548:34)
+    at SMTPConnection.<anonymous> (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:546:26)
+    at SMTPConnection._processResponse (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:953:20)
+    at SMTPConnection._onData (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:755:14)
+    at TLSSocket.SMTPConnection._onSocketData (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:193:44)
+    at TLSSocket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at TLSSocket.Readable.push (node:internal/streams/readable:228:10) {
+  code: 'EAUTH',
+  response: '535 Authentication failed',
+  responseCode: 535,
+  command: 'AUTH PLAIN'
+}
+[2023-04-04T06:47:42.325] [ERROR] default - Error: Invalid login: 535 Authentication failed
+    at SMTPConnection._formatError (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:790:19)
+    at SMTPConnection._actionAUTHComplete (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:1548:34)
+    at SMTPConnection.<anonymous> (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:546:26)
+    at SMTPConnection._processResponse (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:953:20)
+    at SMTPConnection._onData (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:755:14)
+    at TLSSocket.SMTPConnection._onSocketData (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:193:44)
+    at TLSSocket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at TLSSocket.Readable.push (node:internal/streams/readable:228:10) {
+  code: 'EAUTH',
+  response: '535 Authentication failed',
+  responseCode: 535,
+  command: 'AUTH PLAIN'
+}
+[2023-04-04T06:58:42.212] [ERROR] default - Error: Invalid login: 535 Authentication failed
+    at SMTPConnection._formatError (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:790:19)
+    at SMTPConnection._actionAUTHComplete (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:1548:34)
+    at SMTPConnection.<anonymous> (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:546:26)
+    at SMTPConnection._processResponse (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:953:20)
+    at SMTPConnection._onData (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:755:14)
+    at TLSSocket.SMTPConnection._onSocketData (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:193:44)
+    at TLSSocket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at TLSSocket.Readable.push (node:internal/streams/readable:228:10) {
+  code: 'EAUTH',
+  response: '535 Authentication failed',
+  responseCode: 535,
+  command: 'AUTH PLAIN'
+}
+[2023-04-04T06:59:59.629] [ERROR] default - Error: Invalid login: 535 Authentication failed
+    at SMTPConnection._formatError (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:790:19)
+    at SMTPConnection._actionAUTHComplete (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:1548:34)
+    at SMTPConnection.<anonymous> (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:546:26)
+    at SMTPConnection._processResponse (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:953:20)
+    at SMTPConnection._onData (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:755:14)
+    at TLSSocket.SMTPConnection._onSocketData (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:193:44)
+    at TLSSocket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at TLSSocket.Readable.push (node:internal/streams/readable:228:10) {
+  code: 'EAUTH',
+  response: '535 Authentication failed',
+  responseCode: 535,
+  command: 'AUTH PLAIN'
+}
+[2023-04-04T07:04:56.362] [ERROR] default - Error: Invalid login: 535 Authentication failed
+    at SMTPConnection._formatError (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:790:19)
+    at SMTPConnection._actionAUTHComplete (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:1548:34)
+    at SMTPConnection.<anonymous> (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:546:26)
+    at SMTPConnection._processResponse (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:953:20)
+    at SMTPConnection._onData (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:755:14)
+    at TLSSocket.SMTPConnection._onSocketData (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:193:44)
+    at TLSSocket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at TLSSocket.Readable.push (node:internal/streams/readable:228:10) {
+  code: 'EAUTH',
+  response: '535 Authentication failed',
+  responseCode: 535,
+  command: 'AUTH PLAIN'
+}
+[2023-04-04T07:05:00.456] [ERROR] default - Error: Invalid login: 535 Authentication failed
+    at SMTPConnection._formatError (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:790:19)
+    at SMTPConnection._actionAUTHComplete (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:1548:34)
+    at SMTPConnection.<anonymous> (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:546:26)
+    at SMTPConnection._processResponse (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:953:20)
+    at SMTPConnection._onData (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:755:14)
+    at TLSSocket.SMTPConnection._onSocketData (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:193:44)
+    at TLSSocket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at TLSSocket.Readable.push (node:internal/streams/readable:228:10) {
+  code: 'EAUTH',
+  response: '535 Authentication failed',
+  responseCode: 535,
+  command: 'AUTH PLAIN'
+}
+[2023-04-04T08:48:07.614] [ERROR] default - Error: Invalid login: 535 Authentication failed
+    at SMTPConnection._formatError (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:790:19)
+    at SMTPConnection._actionAUTHComplete (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:1548:34)
+    at SMTPConnection.<anonymous> (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:546:26)
+    at SMTPConnection._processResponse (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:953:20)
+    at SMTPConnection._onData (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:755:14)
+    at TLSSocket.SMTPConnection._onSocketData (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:193:44)
+    at TLSSocket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at TLSSocket.Readable.push (node:internal/streams/readable:228:10) {
+  code: 'EAUTH',
+  response: '535 Authentication failed',
+  responseCode: 535,
+  command: 'AUTH PLAIN'
+}
+[2023-04-04T08:48:08.553] [ERROR] default - RestException [Error]: Authenticate
+    at success (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/twilio/lib/base/Version.js:79:23)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Strategy._verify (file:///Users/juanbaquiroga/Desktop/backend/desafios/desafio20/src/lib/passport.lib.js:91:17) {
+  status: 401,
+  code: 20003,
+  moreInfo: 'https://www.twilio.com/docs/errors/20003',
+  details: undefined
+}
+[2023-04-04T15:26:43.771] [ERROR] default - error al logear usuario
+[2023-04-04T15:30:46.811] [ERROR] default - error al logear usuario
+[2023-04-04T15:38:06.581] [ERROR] default - error al logear usuario
+[2023-04-04T15:40:54.854] [ERROR] default - error al logear usuario
+[2023-04-04T15:41:37.938] [ERROR] default - error al logear usuario
+[2023-04-04T15:42:37.535] [ERROR] default - error al logear usuario
+[2023-04-04T15:48:20.363] [ERROR] default - error al logear usuario
+[2023-04-04T15:49:44.658] [ERROR] default - error al logear usuario
