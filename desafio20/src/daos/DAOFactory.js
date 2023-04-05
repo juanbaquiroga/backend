@@ -9,11 +9,9 @@ export class CartDaoFactory {
   static getClient(daoType) {
     switch (daoType) {
       case "MONGO":
-        return new CartMongoDao
-      MongoDao();
+        return new CartMongoDao();
       case "MEM":
-        return new CartMemDao
-      MemDao();
+        return new CartMemDao();
     }
   }
 }
@@ -33,11 +31,9 @@ export class UserDaoFactory {
   static getClient(daoType) {
     switch (daoType) {
       case "MONGO":
-        return new UserMongoDao
-      MongoDao();
+        return new UserMongoDao();
       case "MEM":
-        return new UserMemDao
-      MemDao();
+        return new UserMemDao();
     }
   }
 }

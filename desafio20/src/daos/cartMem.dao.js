@@ -17,10 +17,10 @@ export default class CartMemDao extends DAO {
   }
 
 
-    async getByFilter(filters){
+    async getByFilter(username){
         try {
             const cart = this.collection.forEach(cart => {
-                if(cart.username === filters){
+                if(cart.username === username){
                     return cart;
                 }
             })
@@ -45,7 +45,7 @@ export default class CartMemDao extends DAO {
         }
     }
 
-    async reset(username, producto) {
+    async reset(username) {
         try {
             this.collection.forEach(cart => {
                 if(cart.username === username){
@@ -53,7 +53,7 @@ export default class CartMemDao extends DAO {
                 }
             })
         
-            return producto;
+            return username;
         } catch (err) {
             throw new CustomError(500, "Error deleting cart");
         }

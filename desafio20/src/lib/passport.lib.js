@@ -31,7 +31,7 @@ const validatePassword = (plainPassword, hashedPassword) =>{
 
 const loginStrategy = new LocalStrategy(async (username, password, done)=>{
     try{
-        const user = await userService.findUserByFilter(username);
+        const user = await userService.findUserByFilter({username});
 
         if(!user || !validatePassword(password, user.password)){
             return done('invalid credentials', null)
@@ -47,7 +47,7 @@ const registerStrategy = new LocalStrategy(
     { passReqToCallback: true },
     async (req, username, password, done) =>{
         try {
-            const existingUser = await userService.verifyUsername({username:username});
+            const existingUser = await userService.verifyUsername(username);
             if(existingUser) {
                 return done('username alreaady in use', null)
             }

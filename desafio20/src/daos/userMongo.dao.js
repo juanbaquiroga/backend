@@ -18,9 +18,8 @@ export default class UserMongoDao extends DAO {
         }
     }
     
-    async checkUsername(params){
-        const {username} = params
-        const user = await this.collection.findOne(username);
+    async checkUsername(username){
+        const user = await this.collection.findOne({username:username});
         if(user){
             return true
         }else{
