@@ -24,14 +24,12 @@ const createCart = async (createCartRequest) => {
 const pushToCart = async (username, product) => {
     try {
         const existingCart = await DAO.getByFilter({username});
-
         if (!existingCart) {
-        throw new CustomError(400, "The Cart you want to update does not exist");
+            throw new CustomError(400, "The Cart you want to update does not exist");
         }
+        await DAO.push(username, product);
 
-        const updatedCart = await DAO.push(username, product);
-
-        return updatedCart;
+        return;
     } catch (err) {
         throw err;
     }

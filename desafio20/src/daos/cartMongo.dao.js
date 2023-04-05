@@ -21,15 +21,13 @@ export default class ProductsMongoDao extends DAO {
 
     async push(username, updateCartRequest){
         try {
-            console.log({username, updateCartRequest})
             await this.collection.updateOne(
                 {username: username},
                 { $push: { products: updateCartRequest } }
             )
 
-            return username;
-        }
-        catch (err) {
+            return;
+        } catch (err) {
             throw new CustomError(500, "Error pushing product to cart");
         }
     }

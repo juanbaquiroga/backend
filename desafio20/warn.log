@@ -1,0 +1,16 @@
+[2023-04-04T23:10:27.955] [ERROR] default - Error: Invalid login: 535 Authentication failed
+    at SMTPConnection._formatError (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:790:19)
+    at SMTPConnection._actionAUTHComplete (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:1548:34)
+    at SMTPConnection.<anonymous> (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:546:26)
+    at SMTPConnection._processResponse (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:953:20)
+    at SMTPConnection._onData (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:755:14)
+    at TLSSocket.SMTPConnection._onSocketData (/Users/juanbaquiroga/Desktop/backend/desafios/desafio20/node_modules/nodemailer/lib/smtp-connection/index.js:193:44)
+    at TLSSocket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at TLSSocket.Readable.push (node:internal/streams/readable:228:10) {
+  code: 'EAUTH',
+  response: '535 Authentication failed',
+  responseCode: 535,
+  command: 'AUTH PLAIN'
+}
