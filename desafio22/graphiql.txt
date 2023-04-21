@@ -1,0 +1,28 @@
+mutation{
+  createProduct(prodData:{
+        name: "iPhone 11",
+        price: 1200,
+        img: "soyunaimagen.jpg",
+        stock: 130
+  }){_id, name, img, stock, price}
+}
+
+query{
+  getProducts{_id, name, price, img, stock}
+}
+
+query {
+  getProduct(id:"6419aec067abf50877de3122"){name, price, _id, stock, img}
+}
+
+mutation{
+  updateProduct(id:"6441a384215b881e1c0a0a29", updateProdData:{name: "iPhone 10",
+      img: "soyunaimageneditada.jpg",
+      stock: 121,
+      price: 1201
+  } ){_id,name, img, stock, price}
+}
+
+mutation{
+  deleteProduct(id:"6441a384215b881e1c0a0a29"){_id,name, img, stock, price}
+}

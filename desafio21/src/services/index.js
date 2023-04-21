@@ -1,3 +1,3 @@
-import { productService } from "./product.service.js";
+import { productService } from './product.service.js'
 
-export { productService}
+export { productService }
