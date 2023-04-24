@@ -1,0 +1,47 @@
+<style>
+    table, th, td{
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th, td{
+        padding: 5px 10px;
+        text-align: center;
+    }
+    table{
+        margin-top: 20px;
+    }
+    form{
+        border: 1px solid black;
+        width: 300px;
+        margin-top: 30px;
+    }--
+    .formDiv{
+        display:inline;
+        width: 200px;
+        text-align: center;
+    }
+</style>
+<a href="/products/add/view">agregar producto</a>
+<table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Precio</th>
+        <th>stock</th>
+        <th>img</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <% for (var i = 0; i < products.length; i++) { %>
+        <tr>
+          <td><%= products[i].id %></td>
+          <td><%= products[i].name %></td>
+          <td><%= products[i].price %></td>
+          <td><%= products[i].stock %></td>
+          <td><%= products[i].img %></td>
+        </tr>
+      <% } %>
+    </tbody>
+</table>
